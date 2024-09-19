@@ -140,8 +140,6 @@ export const AirQualityModel = {
   },
 
   async getStationAQI(): Promise<{ stasiun: string; aqi: number }[]> {
-    // Implementasi ini mungkin perlu disesuaikan tergantung pada kemampuan Prisma
-    // untuk melakukan operasi yang kompleks seperti ini
     const results = await prisma.$queryRaw`
       SELECT stasiun, 
              ROUND(GREATEST(
