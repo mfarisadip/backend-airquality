@@ -13,11 +13,13 @@
     # Install Prisma CLI
     RUN bun add prisma
 
+    # Jalankan migrasi Prisma
+    COPY prisma ./prisma
+
     # Salin semua file ke container
     COPY . .
 
-    # Jalankan migrasi Prisma
-    RUN bun prisma migrate deploy
+    RUN npx prisma generate
 
     # Expose port yang digunakan aplikasi
     EXPOSE 3000
