@@ -117,7 +117,6 @@ Dashboard dapat diakses melalui browser di `http://localhost:5000` setelah menja
 Fitur utama dashboard:
 - Visualisasi data sensor dalam bentuk grafik dan tabel
 - Formulir untuk menambah dan mengedit data sensor
-- Fitur pencarian dan filter data
 
 ## Pengembangan
 
