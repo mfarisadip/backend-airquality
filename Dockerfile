@@ -19,7 +19,7 @@
     # Salin semua file ke container
     COPY . .
 
-    RUN npx prisma generate
+    RUN bunx prisma generate
 
     # Expose port yang digunakan aplikasi
     EXPOSE 3000
