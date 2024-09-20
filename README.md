@@ -17,6 +17,9 @@ Proyek ini terdiri dari dua komponen utama:
 
 API dikembangkan menggunakan ElysiaJS dengan database PostgreSQL, sementara dashboard dibuat menggunakan Svelte dan Tailwind CSS.
 
+Sumber data : https://satudata.jakarta.go.id/open-data/detail?kategori=dataset&page_url=data-indeks-standar-pencemar-udara-ispu-di-provinsi-dki-jakarta-2023&data_no=1
+Clean dataset : https://colab.research.google.com/drive/1LKY5-ICWvP2xCGzeVv2j82aRuUS9DpVg?usp=sharing
+
 ## Struktur Proyek
 
 ```
@@ -64,6 +67,7 @@ project-root/
    ```
    cd backend-airquality
    bun install
+   bunx prisma migrate dev
    ```
 
 3. Clone Frontend:
